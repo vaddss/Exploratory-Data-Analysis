@@ -12,6 +12,6 @@ data$DateTime <- paste(data$Date, data$Time)
 data$DateTime <- strptime(data$DateTime, format = "%d/%m/%Y %H:%M:%S")
 
 # Step 4 (creating a plot):
-hist(data$Global_active_power, col = "red", xlab = "Global active power (kilowatts)", main = "Global active power")
+hist(data$Global_active_power, col = "red", xlab = "Global Active Power (kilowatts)", main = "Global active power")
 dev.copy(png, "plot1.png", height=480, width=480)
 dev.off()
